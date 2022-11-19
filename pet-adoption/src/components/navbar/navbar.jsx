@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container, Navbar} from 'react-bootstrap'
-import {Navigate} from "react-router-dom";
 import './navbar.css'
 import logo from '../../assets/img/logo inicio.png'
 
@@ -8,8 +7,9 @@ import logo from '../../assets/img/logo inicio.png'
 export default class Menu extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {  }
     }
-    state = {  }
+    
     render() { 
         return ( 
         <Navbar  id="navbar" expand="lg"> 
@@ -36,8 +36,9 @@ export default class Menu extends React.Component {
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="home.html">Adopta</a></li>
                 <li><a href="donacion.html">Donacion</a></li>
-                <li><a href="contact.html">Contacto</a></li>                
-                <Navigate to = "login" className = "cta" ><li>Login</li></Navigate>
+                <li><a href="contact.html">Contacto</a></li> 
+                <li><a className = "cta" href="login.html">Login</a></li>                
+                {/* <Navigate to = "login" className = "cta" ><li>Login</li></Navigate> */}
             </ul>
         
             </header>   
