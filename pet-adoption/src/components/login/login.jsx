@@ -41,15 +41,15 @@ export default class Login extends React.Component {
                                 required />
                         </Form.Group>
                         <br />
-                        <button type="submit" class="btn btn-primary btn-block justify-content-center" id="BTNENTRAR">Entrar</button>
+                        <button type="submit" className="btn btn-primary btn-block justify-content-center" id="BTNENTRAR">Entrar</button>
                         <hr />
 
 
-                        <a href="register.html" class="btn_registro">¿Aún no tienes cuenta? Registrarme</a>
+                        <a href="register.html" className="btn_registro">¿Aún no tienes cuenta? Registrarme</a>
                     </Form>
                 </div>
             </Container>
-            <div id="login-error" class="alert alert-danger d-none alert_error" role="alert">Usuario o contraseña incorrectos</div></>
+            <div id="login-error" className="alert alert-danger d-none alert_error" role="alert">Usuario o contraseña incorrectos</div></>
          );
     }
 };
