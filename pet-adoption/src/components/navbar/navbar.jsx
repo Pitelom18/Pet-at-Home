@@ -39,7 +39,7 @@ export default class Menu extends React.Component {
                
               </li>
               <li>
-                <Nav.Link href="#">Inicio</Nav.Link>
+                <Nav.Link href="index">Inicio</Nav.Link>
               </li>
               <li>
                 <Nav.Link href="nosotros">Nosotros</Nav.Link>

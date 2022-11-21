@@ -1,5 +1,4 @@
 #contact-wrapper {
-    margin-top: 400px;
     margin: 0;
     left: 0;
     right: 0;
@@ -13,6 +12,7 @@
 
 
 .login-box {
+    margin-top: 98px;
     width: 320px;
     height: 420px;
     background: #FF8C00;
@@ -53,7 +53,17 @@
     margin-bottom: 20px;
 }
 
-.login-box input[type="text"], .login-box input[type="password"] {
+.login-box input[type="user"], .login-box input[type="user"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.login-box input[type="password"], .login-box input[type="password"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -72,6 +82,7 @@
     font-size: 18px;
     border-radius: 20px;
     width: 50%;
+
 
 }
 

@@ -1,0 +1,28 @@
+.body_register{    
+    background-color: #454485;   
+}
+
+#register_container {
+    margin-top: 110px;
+    padding-top: 36px;
+    padding-right: 195px;
+    padding-left: 195px;
+}
+
+form {
+    padding-bottom: 52px;
+}
+
+
+#register-container button,
+#register-container form{
+    width: 100%;
+}
+
+#register-container button{
+    margin-top: 15px;
+}
+
+#register-container .form-label{
+    float: left;
+}

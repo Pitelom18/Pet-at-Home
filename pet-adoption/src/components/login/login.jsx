@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Container} from 'react-bootstrap';
+import {Form, Container, Button, Nav} from 'react-bootstrap';
 import usuarioImg from '../../assets/img/usuario.jpeg'
 import './login.css'
 
@@ -29,8 +29,10 @@ export default class Login extends React.Component {
                     <Form>
                         <Form.Group controlid="form-email">
                             <Form.Control
+                                type= "user"
                                 onChange={(e) => this.setState({ usuario: e.target.value })}
-                                placeholder="Usuario" />
+                                placeholder="Usuario"
+                                required />
                         </Form.Group>
                         <br />
                         <Form.Group controlid="form-password" className="form-group">
@@ -41,12 +43,16 @@ export default class Login extends React.Component {
                                 required />
                         </Form.Group>
                         <br />
-                        <button type="submit" className="btn btn-primary btn-block justify-content-center" id="BTNENTRAR">Entrar</button>
+                        <Button onClick={() => {this.iniciarSesion()}} 
+                                type="submit" 
+                                className="btn btn-primary btn-block justify-content-center" 
+                                id="BTNENTRAR">Entrar</Button>
                         <hr />
 
 
-                        <a href="register.html" className="btn_registro">¿Aún no tienes cuenta? Registrarme</a>
+                        <Nav.Link href="register" className="btn_registro">¿Aún no tienes cuenta? Registrarme</Nav.Link>
                     </Form>
+                    
                 </div>
             </Container>
             <div id="login-error" className="alert alert-danger d-none alert_error" role="alert">Usuario o contraseña incorrectos</div></>
